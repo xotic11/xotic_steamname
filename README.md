@@ -1,4 +1,4 @@
-# xotic_speedometer
+# xotic_steamname
 <div align='center'><img src='https://cdn.upload.systems/uploads/kHtJOTcv.png'/></div>
 
 
