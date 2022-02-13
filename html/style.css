@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+#container {
+    border-bottom:5px solid rgb(0, 60, 255);
+
+    position: relative;
+    margin: auto;
+    transition: 300ms;
+	height: 35rem;
+    left: 0px;
+    top: 200px;
+    width: 55rem;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #161616;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+#inner_container {
+
+    position: relative;
+    margin: auto;
+    transition: 300ms;
+	height: 15rem;
+    left: -200px;
+    top: 80px;
+    width: 25rem;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #3b3b3b;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+#inner_text {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    left: 5px;
+    top: 5px;
+    font-family: 'Poppins';
+}
+
+#outer_text {
+    position: absolute;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    left: 50px;
+    top: 10px;
+    font-family: 'Poppins';
+}
+
+#inner_description {
+    position: relative;
+    color: white;
+    font-size: 15px;
+    left: 5px;
+    top: 15px;
+    text-align: left;
+    font-family: 'Poppins';
+}
+
+#inner_information {
+    position: relative;
+    color: white;
+    border-bottom: 2px solid blue;
+    font-size: 18px;
+    width: 75px;
+    left: 5px;
+    top: 15px;
+    text-align: left;
+    font-family: 'Poppins';
+}
+
+#inner_container2 {
+
+    position: relative;
+    margin: auto;
+    transition: 300ms;
+	height: 15rem;
+    left: 250px;
+    top: -299px;
+    width: 20rem;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #3b3b3b;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+#inner_text2 {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    left: 5px;
+    top: 5px;
+    font-family: 'Poppins';
+}
+
+#inner_steamnameinf {
+    position: relative;
+    color: white;
+    font-size: 15px;
+    left: 5px;
+    top: 15px;
+    text-align: left;
+    font-family: 'Poppins';
+}
+
+#inner_steamname {
+    position: relative;
+    color: white;
+    font-size: 15px;
+    left: 5px;
+    top: 15px;
+    text-align: left;
+    font-family: 'Poppins';
+}
+
+#inner_information2 {
+    position: relative;
+    color: white;
+    border-bottom: 2px solid blue;
+    font-size: 18px;
+    width: 95px;
+    left: 5px;
+    top: 15px;
+    text-align: left;
+    font-family: 'Poppins';
+}
+
+.btn {
+	position: relative;
+  width: 180px;
+  height: 60px;
+  top: 180px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid rgb(0, 60, 255);
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: rgb(0, 60, 255);
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}

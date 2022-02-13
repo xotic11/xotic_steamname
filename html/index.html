@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset=utf-8>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+<body id="openmenu">
+      <div id="container">
+        <h1 id="outer_text">STEAMREWARD</h1>
+        <div id="inner_container">
+          <h1 id="inner_text">INFORMATION</h1>
+          <h1 id="inner_information">WICHTIG</h1>
+          <p id="inner_description">Anscheinend hast du diesen NPC Gefunden. Hier kannst du eine Belohnung abholen falls du den Server Namen [SV] in deinem Namen hast!</p>
+        </div>
+        <button id="button_einloesen" class="btn">
+          <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+          </svg>
+          <span>EINLÖSEN</span>
+        </button>
+      </div>
+
+        <div id="inner_container2">
+          <h1 id="inner_text2">INFORMATION</h1>
+          <h1 id="inner_information2">Belohnung</h1>
+          <p id="inner_steamnameinf">25.000$ und 1x Advancedrifle</p>
+          <span style="margin-left: -12px;" class="name"><span class="username1"></b></span></span>
+        </div>
+
+</body>
+    	<script>
+		  $("body").hide();
+      window.onload = function(e) {
+          window.addEventListener('message', (event) => {
+		  $("body").show();
+		});
+  }
+
+    $("#button_einloesen").click(function () {
+        $("body").hide();
+        $.post('http://xotic_steamname/einloesen', JSON.stringify({}));
+        return
+    })
+
+    document.onkeyup = function (data) {
+        if (data.which == 27) {
+            $("body").hide();
+            $.post('http://xotic_steamname/verlassen', JSON.stringify({}));
+            return
+        }
+    };
+		
+		</script>
+</html>
