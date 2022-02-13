@@ -14,8 +14,8 @@ AddEventHandler('xotic_steamname:check', function()
                     ['@identifier'] = xPlayer.identifier
                 })
 
-                xPlayer.addWeapon("WEAPON_ADVANCEDRIFLE", 250)
-                xPlayer.addMoney(25000)
+                xPlayer.addWeapon(Config.weapon, Config.munition)
+                xPlayer.addMoney(Config.rewardmoney)
             end
         end
         

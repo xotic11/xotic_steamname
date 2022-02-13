@@ -5,6 +5,11 @@ Config.usecommand = true -- /steamreward opens the UI if its false it spawns an 
 Config.ESX = "ESX"
 Config.esx = "esx"
 
+--Script changes
+Config.munition = 250
+Config.weapon = "WEAPON_ADVANCEDRIFLE"
+Config.rewardmoney = 25000
+
 -- messages
 Config.enteredmarkermessage = "Drücke E um deinen Steamreward zu Erhalten."
 Config.eingeloest = "Falls wenn du deine Belohnung noch nicht eingelöst hast hast du sie nun erhalten."
