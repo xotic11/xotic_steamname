@@ -14,7 +14,7 @@ local PlayerData              = {}
 
 Citizen.CreateThread(function ()
     while Config.ESX == nil do
-        TriggerEvent('Config.esx:getSharedObject', function(obj) Config.ESX = obj end)
+        TriggerEvent(Config.esx .. ':getSharedObject', function(obj) Config.ESX = obj end)
         Citizen.Wait(1)
     end
 
